@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS styles for the navigation bar, social media bar, and flex container */
+        /* ... Existing CSS code ... */
+
+        /* CSS styles for the rows with theme text and image */
+        .background {
+            background-color: #f0e4c2;
+        }
+
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(112, 87, 6);
+            display: flex;
+            align-items: center;
+        }
+
+        ul.navbar li {
+            float: left;
+        }
+
+        ul.navbar li.logo {
+            margin-right: 20px;
+            margin-left: 40px;
+            padding: 10px;
+        }
+
+        ul.navbar li.logo img {
+            height: 40px;
+        }
+
+        ul.navbar li a {
+            display: block;
+            color: #f0e4c2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.navbar li a i {
+            margin-right: 5px;
+        }
+
+        ul.navbar li a:hover {
+            background-color: #111;
+        }
+
+        /* CSS styles for the social media bar */
+        .social-media-bar {
+            position: fixed;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-10%);
+            background-color: rgb(112, 87, 6);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-media-bar a {
+            color: #f0e4c2;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .flex-container .section {
+            flex-basis: 30%;
+            padding: 60px;
+            background-color: #fffbee;
+        }
+
+        /* CSS styles for the rest of the page */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: medium;
+            border-radius: 5%;
+            border: 2px solid #f0e4c2;
+            background: linear-gradient(to right, #f0e4c2, #ffffff 20%, #ffffff 80%, #f0e4c2 100%);
+        }
+
+        .indent {
+            text-indent: 80px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .row {
+            clear: both;
+            margin-bottom: 50px;
+            background: radial-gradient(circle, #f0e4c2, white);
+            background-size: cover;
+            color: rgb(112, 87, 6);
+            padding: 50px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .flex {
+            clear: both;
+            margin-bottom: 50px;
+            background: radial-gradient(circle, #f0e4c2, white);
+            background-size: cover;
+            color: rgb(112, 87, 6);
+            padding: 50px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+        .flex .content {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+
+        .flex .content {
+            margin-bottom: 10px;
+        }
+
+        .flex .image-container {
+            flex-basis: 50%;
+            text-align: center;
+        }
+
+        .flex .image-container img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 5px;
+            clip-path: circle(50% at 50% 45%);
+        }
+
+        .row .theme-text {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+
+        .row .theme-text h2 {
+            margin-bottom: 10px;
+        }
+
+        .row .image-container {
+            flex-basis: 50%;
+            text-align: center;
+        }
+
+        .row .image-container img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            clip-path: circle(50% at 50% 50%);
+        }
+
+
+        .project-list li::before {
+            content: "➜ ";
+            margin-right: 5px;
+        }
+
+        .hover {
+            color: inherit;
+            text-decoration: dashed;
+        }
+
+        .hover:hover {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li class="logo"><img src="jsssssssssssssss.jpg" alt="Description of the Image">
+        </li>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+
+
+    <div class="background">
+        <div class="flex">
+            <div class="content">
+                <h1 style="text-indent: 60px;">Welcome to my profile</h1>
+                <p class="indent">Name :- Divyesh Vora</p>
+                <p class="indent">Studing at Indus University Ahmedabad Gujarat</p>
+                <p class="indent">Passionate and Fully immersed in the realm of web development</p>
+                <p class="indent">Age : 19</p>
+                <p class="indent">E-mail : divyeshvora.21.ce@iite.indusuni.ac.in</p>
+                <p class="indent">Phone : 7990910580</p>
+
+            </div>
+            <div class="image-container">
+                <img src="personal_pass_photo.jpeg" alt="Image">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="theme-text">
+                <h2>Profile achievements and talents</h2>
+                <p>
+                <h4>Hi ,my name is Divyesh Vora.</h4>
+                <h4> I am a highly skilled and motivated front-end developer with expertise in
+                    HTML, JavaScript, and CSS, seeking opportunities to contribute to dynamic web development projects.
+                    Committed to delivering high-quality code and exceptional user experiences.</h4>
+                <ul class="arrow-list">
+                    <li>
+                        <h4> Proficient in HTML5, CSS3, and JavaScript, with a strong understanding of responsive web
+                            design
+                            principles.</h4>
+                    </li>
+                    <li>
+                        <h4>Experience working with popular front-end frameworks and libraries such as Bootstrap and
+                            jQuery.
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>Strong problem-solving abilities and attention to detail</h4>
+                    </li>
+                    <li>
+                        <h4>Excellent communication and interpersonal skills</h4>
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="Personal_photo.jpeg" alt="Theme 2 Image" style="width: 200px; height: auto;">
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="theme-text">
+                <h2>My projects</h2>
+                <h4>
+                    <ul class="project-list">
+                        <li><a class="hover" href="form-validation.html">Basic Form Validation</a></li>
+                        <li><a class="hover" href="countdown-timer.html">Countdown Timer</a></li>
+                        <li><a class="hover" href="digital-clock.html">Digital Clock</a></li>
+                        <li><a class="hover" href="rock-paper-scissors.html">Rock Paper Scissors Game</a></li>
+                        <li><a class="hover" href="weather-app.html">Basic Weather App</a></li>
+                    </ul>
+                </h4>
+            </div>
+            <div class="image-container">
+                <img src="project_project.jpg" alt="Theme 3 Image">
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="theme-text">
+                <h2>Predictor</h2>
+                <h4>Hi there have you ever heard about future predictor, want to know your future, you have came to
+                    right
+                    place click the link below and explore our brand new program "Future Predictor"</h4>
+            </div>
+            <div class="image-container">
+                <img src="project.png" alt="Theme 1 Image">
+            </div>
+        </div>
+
+
+
+        <div class="flex-container">
+            <div class="section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad provident cupiditate cumque fugiat, eius vero cum explicabo maxime illo?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis dignissimos et iure error omnis minus quas, delectus optio ratione!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium corrupti fugiat dolorum harum pariatur tenetur laboriosam similique vero tempora incidunt!</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Contact Info</h2>
+                <p>Email: divyeshvora.21.ce@iite.indusuni.ac.in</p>
+                <p>Phone: 799 - 091 - 0580</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel a quis mollitia quod perferendis vero eveniet! Reiciendis vero aspernatur ad dolore animi, illo harum magnam tenetur libero, corporis quibusdam accusantium.</p>
+            </div>
+            <div class="section">
+                <h2>More</h2>
+                <p>Additional information... Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio est quidem reiciendis tempore quia eligendi, adipisci natus assumenda debitis ipsam deleniti repudiandae dolor esse, voluptatum nulla sint. Iste sit ullam laboriosam iusto exercitationem dolores, iure corrupti atque eaque quisquam?</p>
+            </div>
+        </div>
+
+        <div class="social-media-bar">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
